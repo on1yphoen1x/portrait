@@ -1,0 +1,21 @@
+name = "fixit"
+main = "src/worker.js"
+compatibility_date = "2025-09-01"
+workers_dev = false
+routes = [
+  { pattern = "joetaylor.org/fixit*", zone_name = "joetaylor.org" },
+]
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[triggers]
+crons = ["0 * * * *"]
+
+[vars]
+DECAY_PER_HOUR = "6"
+
+[[kv_namespaces]]
+binding = "PORTRAIT"
+id = "d55e91c2ddb24f09b0fa4a8160becf41"

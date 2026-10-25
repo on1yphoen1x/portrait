@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | Joe Taylor</title>
+  <link rel="stylesheet" href="/fixit/styles.css">
+  <script src="/fixit/main.js" type="module"></script>
+</head>
+<body class="page">
+  <main class="page__main">
+    <header class="masthead">
+      <h1 class="masthead__title">Privacy Policy</h1>
+      <p class="masthead__note">Last updated 25 October 2026</p>
+    </header>
+
+    <article class="legal">
+      <p>This page is run by Joe Taylor as a personal project. It collects as little as it can while still letting visitors repair the text together.</p>
+
+      <h2 class="legal__heading">What is stored</h2>
+      <p>The shared state of the page, which is a record of how worn each character is, the total number of repairs ever made and the date the page was last fully intact. None of this identifies you.</p>
+      <p>To stop one person repairing the whole page at once, each visitor can make 20 repairs an hour. When you repair a word, your IP address is combined with a secret value and passed through SHA-256. Only the resulting hash and a count are stored, and they are deleted automatically within two hours. Your IP address itself is never written down.</p>
+      <p>Your browser keeps your answer to the cookie notice in local storage so the notice does not appear on every visit. It is not sent anywhere.</p>
+
+      <h2 class="legal__heading">Cookies</h2>
+      <p>This site sets no cookies of its own and uses no analytics, advertising or third-party tracking.</p>
+
+      <h2 class="legal__heading">Hosting</h2>
+      <p>The site is hosted on Cloudflare, which processes requests on my behalf and may keep short-lived server logs for security and reliability. See Cloudflare's own privacy policy for details.</p>
+
+      <h2 class="legal__heading">Your rights</h2>
+      <p>Because nothing stored can be linked back to you, there is normally nothing to access or delete. If you have a question about this policy, you can contact me through taylortowe.rs.</p>
+
+      <p class="legal__back"><a class="legal__link" href="/fixit/">Back to the page</a></p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copy">&copy; 2026 Joe Taylor</p>
+    <nav class="footer__nav" aria-label="Legal">
+      <a class="footer__link" href="/fixit/privacy" aria-current="page">Privacy Policy</a>
+      <a class="footer__link" href="/fixit/terms">Terms of Service</a>
+    </nav>
+  </footer>
+
+  <aside class="consent" id="consent" aria-label="Cookie notice" hidden>
+    <p class="consent__text">This site sets no tracking or advertising cookies. Your browser remembers this choice, and repairs are counted against a salted hash of your IP address that expires within two hours.</p>
+    <div class="consent__actions">
+      <button class="consent__button consent__button--primary" type="button" data-consent="accepted">Accept</button>
+      <button class="consent__button" type="button" data-consent="declined">Decline</button>
+    </div>
+  </aside>
+</body>
+</html>
