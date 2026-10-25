@@ -19,3 +19,6 @@ DECAY_PER_HOUR = "6"
 [[kv_namespaces]]
 binding = "PORTRAIT"
 id = "d55e91c2ddb24f09b0fa4a8160becf41"
+
+[observability]
+enabled = true
