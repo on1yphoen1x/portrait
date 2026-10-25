@@ -3,7 +3,7 @@ main = "src/worker.js"
 compatibility_date = "2025-09-01"
 workers_dev = false
 routes = [
-  { pattern = "joetaylor.org/fixit*", zone_name = "joetaylor.org" },
+  { pattern = "fixit.joetaylor.org", custom_domain = true },
 ]
 
 [assets]
