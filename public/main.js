@@ -167,7 +167,7 @@ function applyState(data) {
 async function refresh() {
   if (repairInFlight || pendingWords.size > 0) return;
   try {
-    const response = await fetch("/fixit/api/state", { cache: "no-store" });
+    const response = await fetch("/api/state", { cache: "no-store" });
     if (!response.ok) throw new Error(response.statusText);
     applyState(await response.json());
   } catch {
@@ -194,7 +194,7 @@ async function sendRepairs() {
   repairInFlight = true;
 
   try {
-    const response = await fetch("/fixit/api/repair", {
+    const response = await fetch("/api/repair", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ words }),

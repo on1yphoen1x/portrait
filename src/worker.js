@@ -3,8 +3,8 @@ import { handleState } from "./api/state.js";
 import { decay } from "./decay.js";
 
 const routes = {
-  "GET /fixit/api/state": handleState,
-  "POST /fixit/api/repair": handleRepair,
+  "GET /api/state": handleState,
+  "POST /api/repair": handleRepair,
 };
 
 export default {
